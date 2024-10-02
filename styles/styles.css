@@ -263,11 +263,16 @@ body {
     z-index: 2;
     top: 0;
     right: 0;
-    width: 350px;
+    width: 310px;
     height: 100%;
     background: var(--cz-bg);
 }
+.container-card-carrinho {
+    max-height: 350px; /* Definir a altura máxima (aproximadamente 3 itens visíveis) */
+    overflow-y: auto; /* Rolagem vertical quando o conteúdo exceder 3 itens */
+    border: 1px solid #ccc; /* Apenas para visualização */
 
+}
 .container-carrinho-header {
     display: flex;
     align-items: center;
@@ -281,11 +286,11 @@ body {
 
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    margin: 10px 0;
     color: var(--preto);
     background-color: var(--branco);
-    margin: 1em;
-    border-radius: 10px;
+    margin: 0.5em;
+    border-radius: 7px;
 }
 
 .card-infos-carrinho {
@@ -297,6 +302,7 @@ body {
     margin: 1em;
     width: 60px;
     height: 60px;
+    object-fit: cover;
 
 }
 
@@ -357,6 +363,14 @@ body {
     width: 100%;
     font-size: 28px;
     padding: .5em;
-    background-color: #12dd00;
-    border: 1px solid var(--branco);
+    background-color: var(--preto);
+    border: 1px solid var(--preto);
+    color: var(--lj);
 }
+
+.botao-continuar-comp {
+    font-size: 14px;
+    margin: .5em;
+    color: var(--vm);
+}
+ 
