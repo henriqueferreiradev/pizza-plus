@@ -268,9 +268,9 @@ body {
     background: var(--cz-bg);
 }
 .container-card-carrinho {
-    max-height: 350px; /* Definir a altura máxima (aproximadamente 3 itens visíveis) */
-    overflow-y: auto; /* Rolagem vertical quando o conteúdo exceder 3 itens */
-    border: 1px solid #ccc; /* Apenas para visualização */
+    max-height: 460px; 
+    overflow-y: auto; 
+    border: 1px solid #ccc; 
 
 }
 .container-carrinho-header {
@@ -373,4 +373,41 @@ body {
     margin: .5em;
     color: var(--vm);
 }
- 
+
+.carrinho-subtotal {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: .5em;
+}
+
+.c-subtotal-titulo {
+      font-size: 14px;
+      font-weight: 700;
+      padding: .5em;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+      color: #000000;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 0.5em;
+    color: #000000;
+}
+
+.span-desconto {
+    color: var(--vm);
+    font-weight: 700;
+    font-size: 11px;
+    width: 60%;
+}
+
+.subtotal-pix {
+    font-weight: 700;
+    color: var(--vm);
+}
+
+.botao-continuar-comp:active ~ .container-carrinho{
+    display: none;
+}
